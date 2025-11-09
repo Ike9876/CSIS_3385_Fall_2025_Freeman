@@ -1,0 +1,26 @@
+What were the most important changes you made to the form, and why?
+
+The most important changes made to the form was the the correction to the password field, implementing more attributes for inputs and changing the method to POST.
+For the password field, it is kinda hard to make an account without the ability to make a password. For implementing more validation rules, this was a major increase both for users and security.
+How it helps the users is by making passwords longer, properly instructing what is needed for fields and what is allowed. Finally the other major change is the method. DELETE method did not work for an html file, while PUT both worked and was a better alternative than GET.
+
+
+How did you decide what validation rules to apply?
+
+I decided the validation rules to apply by my knowledge I had/provided. I wanted to make sure they were not allowed to input characters that were not allowed. I also wanted to input validation rules that would help guide the user in properly filling out the fields with placeholders, not allowing to short of passwords, or to long of usernames and making sure they field out the fields etc. Other validation rules were used to make sure prohibit special characters that are used for Cross-Site Scripting or to set the limit of characters to low to input a proper malicious command.
+
+
+What is one security issue you addressed, and how did your change help prevent it?
+
+In my opinion, the biggest security issue was the ability for threat actors execute Cross-Site Scripting. The biggest issue was the field “textarea”. By limiting this to only 10 characters threat actors cannot input huge payloads. This goes for all other fields and by adding “patterns” and “maxlength” attributes to eliminate the use of special characters and/or.
+
+
+(Optional) What would you do differently if this were a live production form?
+
+I would make sure I was more versed in html and how to make the most of the tools to increase security.
+
+I, Ephraim Freeman, affirm that all work submitted in this case study is my own.
+I have not used AI tools, AI-generated text, or AI-based writing assistants (such as ChatGPT, Gemini, Grammarly AI, etc.) in the creation of this assignment. 
+I understand that using AI tools for this project violates the spirit of ethical learning and may result in academic consequences.
+
+Signed: ______Ephraim Freeman________________ Date: _____11/7/2025__________

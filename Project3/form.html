@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Submit User Info</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="form-container">
+
+    <form action="/inventory/search" method="POST">
+
+        <fieldset>
+            <legend>Create User</legend>
+            
+            <label for="username">Username:</label>
+            <input required id="username" name="username" maxlength="15" placeholder="Max 15 characters" pattern="[A-Za-z0-9_]+"/>
+
+            <label for="password">Password:</label>
+            <input required id="password" name="password" type="password" minlength="12" autocomplete="new-password" placeholder="Input a secure password minimum 12 characters"/>
+
+            <label for="age">Age:</label>
+            <input required id="age" name="age" type="number" min="1" max="100" placeholder="Input your age"/>
+
+            <label for="email">Email:</label>
+            <input required id="email" name="email" type="email" placeholder="Input your email"/>
+
+            <label for="message">Message (10 words or less):</label>
+            <textarea id="message" name="message" maxlength="10" placeholder="Limited to 10 characters"></textarea>
+
+         </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
